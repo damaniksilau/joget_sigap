@@ -813,7 +813,7 @@
                 "id": "category-1F8311F549D04A42B5D1B9B735EFA8C7",
                 "label": "<i class=\"fa fa-newspaper\"><\/i> RUANG RAPAT",
                 "permission": {
-                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "className": "",
                     "properties": {}
                 }
             }
