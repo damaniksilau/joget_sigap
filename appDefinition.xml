@@ -305,8 +305,8 @@
                <packageParticipant>
                   <processDefId>rupat_approver_process</processDefId>
                   <participantId>rupat_applicant</participantId>
-                  <type>requester</type>
-                  <value>runProcess</value>
+                  <type>user</type>
+                  <value>dicky.halleyadi,bagus.pangestu,arining.lestari,heri.utomo,jondri.hermawan,nur.sakinah,robes.purba,tegar.arian,sigit.wiweko,samodro.basuki,puspita.mustika,nikeu.arkadewi,aris.hirtranusi</value>
                </packageParticipant>
             </entry>
             <entry>
