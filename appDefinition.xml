@@ -287,8 +287,8 @@
                <packageParticipant>
                   <processDefId>rupat_approver_process</processDefId>
                   <participantId>rupat_approver</participantId>
-                  <type>requesterHod</type>
-                  <value>runProcess</value>
+                  <type>user</type>
+                  <value>admin</value>
                </packageParticipant>
             </entry>
             <entry>
