@@ -1,0 +1,149 @@
+{
+    "categories": [{
+        "className": "org.joget.apps.userview.model.UserviewCategory",
+        "menus": [
+            {
+                "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                "properties": {
+                    "binder": {
+                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                        "properties": {
+                            "aggregateField": [{
+                                "field": "piltek",
+                                "function": "AFD_COUNT_"
+                            }],
+                            "customSelectionValue": "piltek",
+                            "extraCondition": "",
+                            "filters": [],
+                            "formDefId": "reqteknisi",
+                            "functionColumns": [],
+                            "groupBy": "piltek",
+                            "having": [],
+                            "joins": [{
+                                "fieldId": "teknisi.natek",
+                                "joinFieldId": "id",
+                                "tableName": "teknisi"
+                            }]
+                        }
+                    },
+                    "categoryAxisLabel": "TEKNISI",
+                    "chartHeight": "80%",
+                    "chartType": "bar",
+                    "chartWidth": "100%",
+                    "colors": "",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "diagramteknisi",
+                    "datasource": "binder",
+                    "enableOffline": "",
+                    "horizontal": "",
+                    "id": "41C9472717DD4D97878260A02F954031",
+                    "keyName": "",
+                    "label": "DIAGRAM BY TEKNISI",
+                    "mapping_x": "piltek",
+                    "mapping_ys": [{
+                        "legend": "Count",
+                        "y": "AFD_COUNT_piltek"
+                    }],
+                    "showLegend": "true",
+                    "showValueLabel": "true",
+                    "sortingOrder": "ASC",
+                    "sortingOrderByColumn": "",
+                    "stack": "",
+                    "title": "DIAGRAM BY TEKNISI",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "valueAxisLabel": "JUMLAH",
+                    "xAxisDisplayAS": "",
+                    "yaxisPrefix": ""
+                }
+            },
+            {
+                "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                "properties": {
+                    "binder": {
+                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                        "properties": {
+                            "aggregateField": [{
+                                "field": "priotek",
+                                "function": "AFD_COUNT_"
+                            }],
+                            "customSelectionValue": "",
+                            "extraCondition": "",
+                            "filters": [],
+                            "formDefId": "reqteknisi",
+                            "functionColumns": [],
+                            "groupBy": "priotek",
+                            "having": [],
+                            "joins": []
+                        }
+                    },
+                    "categoryAxisLabel": "PRIORITY",
+                    "chartHeight": "80%",
+                    "chartType": "bar",
+                    "chartWidth": "100%",
+                    "colors": "",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "diagramtransport",
+                    "datasource": "binder",
+                    "enableOffline": "",
+                    "horizontal": "",
+                    "id": "BDC314C72E0041C8AFE0EC93FE8C5FE0",
+                    "keyName": "",
+                    "label": "DIAGRAM BY PRIORITY",
+                    "mapping_x": "priotek",
+                    "mapping_ys": [{
+                        "legend": "Count",
+                        "y": "AFD_COUNT_priotek"
+                    }],
+                    "showLegend": "true",
+                    "showValueLabel": "true",
+                    "sortingOrder": "ASC",
+                    "sortingOrderByColumn": "",
+                    "stack": "",
+                    "title": "DIAGRAM BY PRIORITY",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "valueAxisLabel": "JUMLAH",
+                    "xAxisDisplayAS": "",
+                    "yaxisPrefix": ""
+                }
+            }
+        ],
+        "properties": {
+            "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+            "label": "<i class='fa fa-home'><\/i> Home"
+        }
+    }],
+    "className": "org.joget.apps.userview.model.Userview",
+    "properties": {
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "diagramTeknisi",
+        "logoutText": "Logout",
+        "name": "DIAGRAM TEKNISI",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#"
+    },
+    "setting": {"properties": {
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "theme": {
+            "className": "org.joget.plugin.enterprise.ProgressiveTheme",
+            "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "ORANGE",
+                "buttonTextColor": "WHITE",
+                "fontColor": "WHITE",
+                "menuFontColor": "BLACK",
+                "mobileCacheEnabled": "",
+                "mobileViewDisabled": "",
+                "primaryColor": "INDIGO",
+                "themeScheme": "light"
+            }
+        },
+        "userviewDescription": ""
+    }}
+}

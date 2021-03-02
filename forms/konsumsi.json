@@ -1,0 +1,447 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "reqkom",
+                        "label": "REQUEST BY",
+                        "maxlength": "",
+                        "permissionHidden": "",
+                        "placeholder": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#currentUser.username#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "email",
+                        "useDefaultWhenEmpty": "",
+                        "value": "#currentUser.email#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "email",
+                        "useDefaultWhenEmpty": "",
+                        "value": "#currentUser.email#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "wakkom",
+                        "label": "Waktu",
+                        "maxlength": "",
+                        "permissionHidden": "",
+                        "placeholder": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#date.yyyy-MM-dd#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "namaKom",
+                        "label": "KONSUMSI KEGIATAN",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "divkom",
+                        "label": "DIVISI",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "cacheInterval": "",
+                                "emptyLabel": "Pilih Divisi",
+                                "extraCondition": "",
+                                "formDefId": "divisi",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "nadiv",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "nomorkon",
+                        "label": "NOMOR PJ",
+                        "maxlength": "13",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": "numeric"
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "jekom",
+                        "label": "JENIS KONSUMSI",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "",
+                                "value": ""
+                            },
+                            {
+                                "grouping": "",
+                                "label": "SNACK PAGI",
+                                "value": "SNACK PAGI"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "SNACK SIANG",
+                                "value": "SNACK SIANG"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "SNACK MALAM",
+                                "value": "SNACK MALAM"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "jumkom",
+                        "label": "JUMLAH",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Masukan angka saja",
+                                "type": "numeric"
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "rukom",
+                        "label": "RUANGAN",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "cacheInterval": "",
+                                "emptyLabel": "Pilih Ruangan",
+                                "extraCondition": "",
+                                "formDefId": "ruangan",
+                                "groupingColumn": "",
+                                "idColumn": "",
+                                "labelColumn": "Narung",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.AjaxSubForm",
+                    "properties": {
+                        "ajax": "true",
+                        "collapsible": "",
+                        "collapsibleExpanded": "true",
+                        "collapsibleLabelCollapsed": "View Details",
+                        "collapsibleLabelExpanded": "Hide Details",
+                        "formDefId": "ruangan",
+                        "hideEmpty": "true",
+                        "id": "ajaxkom",
+                        "label": "RUANGAN INFO",
+                        "noLoad": "",
+                        "noframe": "",
+                        "parentSubFormId": "rukom",
+                        "permissionHidden": "",
+                        "readonly": "true",
+                        "readonlyLabel": "true",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.DatePicker",
+                    "properties": {
+                        "allowManual": "true",
+                        "currentDateAs": "",
+                        "dataFormat": "dd-MM-yyyy",
+                        "datePickerType": "",
+                        "endDateFieldId": "",
+                        "format": "",
+                        "id": "tangkom",
+                        "label": "TANGGAL",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "startDateFieldId": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": "",
+                        "yearRange": "c-0:c+10"
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.TimePicker",
+                    "properties": {
+                        "format24hr": "true",
+                        "id": "jamkom",
+                        "label": "JAM",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.FileUpload",
+                    "properties": {
+                        "attachment": "",
+                        "fileType": "",
+                        "fileTypeMsg": "Invalid file type",
+                        "id": "nodinkom",
+                        "label": "NOTA DINAS",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "",
+                        "padding": "",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
+                        "size": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "status",
+                        "useDefaultWhenEmpty": "true",
+                        "value": "New",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextArea",
+                    "properties": {
+                        "cols": "20",
+                        "id": "catkom",
+                        "label": "CATATAN",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "rows": "5",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CaptchaField",
+                    "properties": {
+                        "id": "field12",
+                        "label": "Captcha"
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "permintaankonsum",
+            "join": "",
+            "label": "KONSUMSI",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "konsumsi",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "PERMINTAAN KONSUMSI",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "org.joget.apps.app.lib.EmailTool",
+            "properties": {
+                "bcc": "",
+                "cc": "",
+                "fields": [],
+                "files": [],
+                "formDefId": "",
+                "from": "sigap@asabri.co.id",
+                "host": "smtp.office365.com",
+                "icsAttachement": "",
+                "isHtml": "",
+                "message": "Permintaan baru dengan data sbb:\nRequest Oleh : #currentUser.username#\n\nNAMA ACARA: #requestParam.namaKom#\nWAKTU : #requestParam.wakkom#\nREQUEST : #requestParam.reqkom#\nNOMOR PJ : #requestParam.nomorkon#\nJENIS KONSUMSI :  #requestParam.jekom#\nRUANGAN : #binder.options.db_konsum.rukom#\nJUMLAH KONSUMSI : #requestParam.jumkom#\nTANGGAL : #requestParam.tangkom#\nJAM : #requestParam.jamkom#\nCATATAN : #requestParam.catkom#\n\nTerimakasih \nSIGAP",
+                "password": "%%%%wTTUwis3+MQ7/YwM1W65geY7vSQW/uc2%%%%",
+                "port": "587",
+                "security": "TLS",
+                "subject": "PERMINTAAN KONSUMSI OLEH #currentUser.username#",
+                "toParticipantId": "",
+                "toSpecific": "#envVariable.adminKonsum#",
+                "username": "sigap@asabri.co.id"
+            }
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "db_konsum"
+    }
+}

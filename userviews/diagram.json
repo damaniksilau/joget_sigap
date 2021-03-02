@@ -1,0 +1,311 @@
+{
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                    "properties": {
+                        "binder": {
+                            "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                            "properties": {
+                                "aggregateField": [{
+                                    "field": "pilrupat",
+                                    "function": "AFD_COUNT_"
+                                }],
+                                "customSelectionValue": "pilrupat",
+                                "extraCondition": "",
+                                "filters": [],
+                                "formDefId": "rupat",
+                                "functionColumns": [],
+                                "groupBy": "pilrupat",
+                                "having": [],
+                                "joins": []
+                            }
+                        },
+                        "categoryAxisLabel": "RUANGAN",
+                        "chartHeight": "80%",
+                        "chartType": "bar",
+                        "chartWidth": "100%",
+                        "colors": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "persenrupatruang",
+                        "datasource": "binder",
+                        "enableOffline": "",
+                        "horizontal": "",
+                        "id": "A0E0C1017FE34186948F549C2EBEADBB",
+                        "keyName": "",
+                        "label": "Request Ruangan",
+                        "mapping_x": "pilrupat",
+                        "mapping_ys": [{
+                            "legend": "Count",
+                            "y": "AFD_COUNT_pilrupat"
+                        }],
+                        "showLegend": "true",
+                        "showValueLabel": "",
+                        "sortingOrder": "ASC",
+                        "sortingOrderByColumn": "",
+                        "stack": "",
+                        "title": "Request Ruangan",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "valueAxisLabel": "JUMLAH",
+                        "xAxisDisplayAS": "",
+                        "yaxisPrefix": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                    "properties": {
+                        "binder": {
+                            "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                            "properties": {
+                                "aggregateField": [{
+                                    "field": "reqpat",
+                                    "function": "AFD_COUNT_"
+                                }],
+                                "customSelectionValue": "",
+                                "extraCondition": "",
+                                "filters": [],
+                                "formDefId": "rupat",
+                                "functionColumns": [],
+                                "groupBy": "reqpat",
+                                "having": [],
+                                "joins": []
+                            }
+                        },
+                        "categoryAxisLabel": "DIVISI",
+                        "chartHeight": "80%",
+                        "chartType": "bar",
+                        "chartWidth": "100%",
+                        "colors": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "persenrupatdiv",
+                        "datasource": "binder",
+                        "enableOffline": "",
+                        "horizontal": "",
+                        "id": "BD6A343D24894C7885B7F634E035D068",
+                        "keyName": "",
+                        "label": "Request By Divisi",
+                        "mapping_x": "reqpat",
+                        "mapping_ys": [{
+                            "legend": "Count",
+                            "y": "AFD_COUNT_reqpat"
+                        }],
+                        "showLegend": "true",
+                        "showValueLabel": "true",
+                        "sortingOrder": "ASC",
+                        "sortingOrderByColumn": "",
+                        "stack": "",
+                        "title": "Request Ruangan",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "valueAxisLabel": "JUMLAH",
+                        "xAxisDisplayAS": "",
+                        "yaxisPrefix": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                    "properties": {
+                        "binder": {
+                            "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                            "properties": {
+                                "aggregateField": [{
+                                    "field": "crepat",
+                                    "function": "AFD_COUNT_"
+                                }],
+                                "customSelectionValue": "",
+                                "extraCondition": "",
+                                "filters": [],
+                                "formDefId": "rupat",
+                                "functionColumns": [],
+                                "groupBy": "crepat",
+                                "having": [],
+                                "joins": []
+                            }
+                        },
+                        "categoryAxisLabel": "USER",
+                        "chartHeight": "80%",
+                        "chartType": "bar",
+                        "chartWidth": "100%",
+                        "colors": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "persenrupatuser",
+                        "datasource": "binder",
+                        "enableOffline": "",
+                        "horizontal": "",
+                        "id": "41D22F08AAB24CAF84B8C361E6F8DA3D",
+                        "keyName": "",
+                        "label": "Request By Pengguna",
+                        "mapping_x": "crepat",
+                        "mapping_ys": [{
+                            "legend": "Count",
+                            "y": "AFD_COUNT_crepat"
+                        }],
+                        "showLegend": "true",
+                        "showValueLabel": "",
+                        "sortingOrder": "ASC",
+                        "sortingOrderByColumn": "",
+                        "stack": "",
+                        "title": "Request Pengguna",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "valueAxisLabel": "JUMLAH",
+                        "xAxisDisplayAS": "",
+                        "yaxisPrefix": ""
+                    }
+                }
+            ],
+            "properties": {
+                "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+                "label": "<i class='fa fa-home'><\/i> Home"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamName": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "add-cancelButtonLabel": "",
+                    "add-customFooter": "",
+                    "add-customHeader": "",
+                    "add-messageShowAfterComplete": "",
+                    "add-saveButtonLabel": "",
+                    "addFormId": "konsumsi",
+                    "buttonPosition": "bottomLeft",
+                    "checkboxPosition": "left",
+                    "customId": "konsumsi_crud",
+                    "datalistId": "list_konsumsi",
+                    "edit-afterSaved": "list",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-allowRecordTraveling": "",
+                    "edit-backButtonLabel": "",
+                    "edit-customFooter": "",
+                    "edit-customHeader": "",
+                    "edit-firstButtonLabel": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "edit-nextButtonLabel": "",
+                    "edit-prevButtonLabel": "",
+                    "edit-readonly": "",
+                    "edit-readonlyLabel": "",
+                    "edit-saveButtonLabel": "",
+                    "editFormId": "konsumsi",
+                    "id": "36a6d7dc-9e5e-4d74-95ac-95afa677316f",
+                    "keyName": "",
+                    "label": "Manage PERMINTAAN KONSUMSI",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "list-deleteButtonLabel": "",
+                    "list-editLinkLabel": "",
+                    "list-moreActions": [],
+                    "list-newButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "rowCount": "true",
+                    "selectionType": "multiple"
+                }
+            }],
+            "properties": {
+                "id": "category-fb1beff8-2c93-41f3-be14-cf867cda7996",
+                "label": "<i class='fa fa-tasks'><\/i>Manage PERMINTAAN KONSUMSI"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "add-afterSaved": "list",
+                    "add-afterSavedRedirectParamName": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "add-cancelButtonLabel": "",
+                    "add-customFooter": "",
+                    "add-customHeader": "",
+                    "add-messageShowAfterComplete": "",
+                    "add-saveButtonLabel": "",
+                    "addFormId": "master_hash",
+                    "buttonPosition": "bottomLeft",
+                    "checkboxPosition": "left",
+                    "customId": "master_hash_crud",
+                    "datalistId": "list_master_hash",
+                    "edit-afterSaved": "list",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-allowRecordTraveling": "",
+                    "edit-backButtonLabel": "",
+                    "edit-customFooter": "",
+                    "edit-customHeader": "",
+                    "edit-firstButtonLabel": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "edit-nextButtonLabel": "",
+                    "edit-prevButtonLabel": "",
+                    "edit-readonly": "",
+                    "edit-readonlyLabel": "",
+                    "edit-saveButtonLabel": "",
+                    "editFormId": "master_hash",
+                    "id": "396e757f-1385-46cf-8429-ce188c01d612",
+                    "keyName": "",
+                    "label": "Manage MASTER_EMAIL",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "list-deleteButtonLabel": "",
+                    "list-editLinkLabel": "",
+                    "list-moreActions": [],
+                    "list-newButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "rowCount": "true",
+                    "selectionType": "multiple"
+                }
+            }],
+            "properties": {
+                "id": "category-d513c2ce-3fbe-4417-ad6a-08c40ddaa779",
+                "label": "<i class='fa fa-tasks'><\/i>Manage MASTER_EMAIL"
+            }
+        }
+    ],
+    "className": "org.joget.apps.userview.model.Userview",
+    "properties": {
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "diagram",
+        "logoutText": "Logout",
+        "name": "Diagram",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#"
+    },
+    "setting": {"properties": {
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "theme": {
+            "className": "org.joget.plugin.enterprise.ProgressiveTheme",
+            "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "ORANGE",
+                "buttonTextColor": "WHITE",
+                "fontColor": "WHITE",
+                "menuFontColor": "BLACK",
+                "mobileCacheEnabled": "",
+                "mobileViewDisabled": "",
+                "primaryColor": "INDIGO",
+                "themeScheme": "light"
+            }
+        },
+        "userviewDescription": ""
+    }}
+}

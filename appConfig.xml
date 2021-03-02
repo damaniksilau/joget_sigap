@@ -1,0 +1,46 @@
+<appDefinition>
+   <appId>sigapv01</appId>
+   <id>sigapv01</id>
+   <version></version>
+   <name>A SIGAP</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList>
+      <pluginDefaultProperties>
+         <id>org.joget.plugin.enterprise.FormDataAuditTrailPlugin</id>
+         <appId>sigapv01</appId>
+         <appVersion>1</appVersion>
+         <pluginName>Form Data Audit Trail</pluginName>
+         <pluginDescription>Store audit trail of Form Data to app_form_data_audit_trail table.</pluginDescription>
+         <pluginProperties>{&quot;captureLoad&quot;:&quot;true&quot;,&quot;captureSave&quot;:&quot;true&quot;,&quot;captureSavedDatainJson&quot;:&quot;true&quot;,&quot;captureDelete&quot;:&quot;true&quot;,&quot;captureMode&quot;:&quot;all&quot;}</pluginProperties>
+      </pluginDefaultProperties>
+   </pluginDefaultPropertiesList>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>adminKonsum</id>
+         <value> Lyd.amy@asabri.co.id;robes.purba@asabri.co.id</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>adminRapat</id>
+         <value>robes.purba@asabri.co.id;robesnudsonpurba@gmail.com</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>adminTeknis</id>
+         <value>robes.purba@asabri.co.id</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>adminTrans</id>
+         <value>robes.purba@asabri.co.id</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>field5</id>
+         <value></value>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>8gtKeRIoxZa+nLAzwMDzDM5vziwP4dTyykvjV5IztMGN4xWZyKVPSw==</license>
+</appDefinition>

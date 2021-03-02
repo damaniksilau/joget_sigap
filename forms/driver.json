@@ -1,0 +1,216 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "nadri",
+                        "label": "NAMA DRIVER",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DuplicateValueValidator",
+                            "properties": {
+                                "errorDuplicateMsg": "Nama Driver telah terdaftar sebelumnya",
+                                "errorFormatMsg": "",
+                                "fieldId": "nadri",
+                                "formDefId": "driver",
+                                "mandatory": "true",
+                                "regex": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "jkeldri",
+                        "label": "JENIS KELAMIN",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "",
+                                "value": ""
+                            },
+                            {
+                                "grouping": "",
+                                "label": "PRIA",
+                                "value": "PRIA"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "WANITA",
+                                "value": "WANITA"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Pilih Jenis Kelamin",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.DatePicker",
+                    "properties": {
+                        "allowManual": "",
+                        "currentDateAs": "",
+                        "dataFormat": "yyyy-MM-dd",
+                        "datePickerType": "",
+                        "endDateFieldId": "",
+                        "format": "",
+                        "id": "lahirdri",
+                        "label": "TANGGAL LAHIR",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "startDateFieldId": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": "",
+                        "yearRange": "c-100:c+10"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "nodri",
+                        "label": "NOMOR HP/TELEPON",
+                        "maxlength": "14",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "Silahkan masukan nomor hp/telepon",
+                                "type": "numeric"
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.ImageUpload",
+                    "properties": {
+                        "createThumbnail": "true",
+                        "fileType": ".jpeg;.jpg;.gif;.png",
+                        "fileTypeMsg": "Type Photo tidak memenuhi",
+                        "height": "240",
+                        "id": "gamdri",
+                        "label": "GAMBAR",
+                        "maxSize": "4096",
+                        "maxSizeMsg": "Ukuran Poto Terlalu Besar",
+                        "multiple": "",
+                        "padding": "",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "true",
+                        "resizeHeight": "",
+                        "resizeMethod": "",
+                        "resizeQuality": "0.8",
+                        "resizeWidth": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "width": "240"
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.CaptchaField",
+                    "properties": {
+                        "id": "capdriv",
+                        "label": "KONFIRMASI - (Anda Bukanlah Robot)"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "datedri",
+                        "useDefaultWhenEmpty": "",
+                        "value": "#date.yyyy-MM-dd#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "credri",
+                        "useDefaultWhenEmpty": "",
+                        "value": "#currentUser.username#",
+                        "workflowVariable": ""
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "id": "section1",
+            "label": "Section"
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "driver",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "DRIVER",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "master_driver"
+    }
+}
