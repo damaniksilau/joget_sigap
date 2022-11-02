@@ -1,0 +1,246 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDatasource": "custom",
+            "jdbcDriver": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+            "jdbcPassword": "%%%%W73RdQiG7NrP1C9RpNcyoaZW1PuRBmNF%%%%",
+            "jdbcUrl": "jdbc:sqlserver://172.25.6.10:1433;SelectMethod=direct;DatabaseName=ASETDB",
+            "jdbcUser": "sa",
+            "optimisePaging": "",
+            "primaryKey": "username",
+            "sql": "SELECT * FROM asset "
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "datalist_type": "column",
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_1",
+            "label": "id",
+            "name": "id",
+            "sortable": "false"
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "NAMA ASET",
+            "name": "name",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_4",
+            "label": "NOMOR ASET",
+            "name": "assetNumber",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_6",
+            "label": "TIPE ASET",
+            "name": "assetType",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_2",
+            "label": "NAMA PIC",
+            "name": "picName",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "NAMA VENDOR",
+            "name": "vendorName",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_5",
+            "label": "STATUS",
+            "name": "status",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "Fungsi untuk mengambil data dari simaset",
+    "filters": [
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-7094348-fn_assetNumber",
+            "hidden": "",
+            "id": "filter_3",
+            "label": "NOMOR ASET",
+            "name": "assetNumber",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-7094348-fn_assetType",
+            "hidden": "",
+            "id": "filter_2",
+            "label": "TIPE ASET",
+            "name": "assetType",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-7094348-fn_picName",
+            "hidden": "",
+            "id": "filter_1",
+            "label": "NAMA PIC",
+            "name": "picName",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-7094348-fn_vendorName",
+            "hidden": "",
+            "id": "filter_5",
+            "label": "NAMA VENDOR",
+            "name": "vendorName",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-7094348-fn_vendorName",
+            "hidden": "",
+            "id": "filter_4",
+            "label": "KANTOR CABANG",
+            "name": "vendorName",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-7094348-fn_name",
+            "hidden": "",
+            "id": "filter_0",
+            "label": "NAMA",
+            "name": "name",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": ""}
+            }
+        }
+    ],
+    "id": "datasimaset",
+    "name": "SIMASET",
+    "order": "",
+    "orderBy": "",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [],
+    "showPageSizeSelector": "true",
+    "useSession": "false"
+}
