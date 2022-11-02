@@ -1,0 +1,27 @@
+{
+    "elements": [
+        {
+            "className": "org.joget.api.lib.AppListAPI",
+            "properties": {
+                "ENABLED_PATHS": "get:/",
+                "id": "AAD2AFE6-489A-441B-9343-93ABEF65436E",
+                "label": "",
+                "listDefId": "logsigap"
+            }
+        },
+        {
+            "className": "org.joget.api.lib.AppListAPI",
+            "properties": {
+                "ENABLED_PATHS": "get:/",
+                "id": "B33E801E-8AD7-48FF-F1E9-2BFBC930F593",
+                "label": "",
+                "listDefId": "master_ruangan"
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "API-60b92b09-c4a9-44e7-8a84-50fae0bcc6fd",
+        "name": "Sigap"
+    }
+}
