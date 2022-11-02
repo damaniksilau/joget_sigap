@@ -1,5 +1,4 @@
 <appDefinition>
-   <appId>sigapv01</appId>
    <id>sigapv01</id>
    <version></version>
    <name>A SIGAP</name>
@@ -492,28 +491,28 @@
       <appResource>
          <id>607px-Logo_asabri.png</id>
          <appId>sigapv01</appId>
-         <appVersion>1</appVersion>
+         <appVersion>2</appVersion>
          <filesize>38139</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>LOGOAPP.png</id>
          <appId>sigapv01</appId>
-         <appVersion>1</appVersion>
+         <appVersion>2</appVersion>
          <filesize>44926</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>LOGOAPP1.png</id>
          <appId>sigapv01</appId>
-         <appVersion>1</appVersion>
+         <appVersion>2</appVersion>
          <filesize>88098</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>SIGAP_LOGO.png</id>
          <appId>sigapv01</appId>
-         <appVersion>1</appVersion>
+         <appVersion>2</appVersion>
          <filesize>46147</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
