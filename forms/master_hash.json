@@ -1,0 +1,169 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.sample.Tooltip",
+                    "properties": {
+                        "color": "blue",
+                        "content": "<p><strong>Fyi<\/strong> : Email yang diisi akan menerima email apabila ada permintaan seperti&nbsp;<\/p>\n<ol>\n<li>Permintaan Rapat<\/li>\n<li>Permintaan Transportasi<\/li>\n<li>Permintaan Teknisi<\/li>\n<li>Permintaan Makanan<\/li>\n<\/ol>\n<p>Apabila terdapat dua atau lebih penerima notifikasi, pisahkan dengan tanda \";\"<\/p>\n<p>Contoh : email1.asabri.co.id;email2@asabri.co.id<\/p>",
+                        "expanddefault": "",
+                        "id": "field5",
+                        "label": "PETUNJUK PENGISIAN",
+                        "showanimation": "true",
+                        "showarrow": "true",
+                        "title": "Klik Disini Untuk Petunjuk"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "adminTeknis",
+                        "label": "EMAIL ADMIN TEKNIS",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "adminTrans",
+                        "label": "EMAIL ADMIN TRANSPORT",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "adminRapat",
+                        "label": "EMAIL NOTIF RAPAT",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "adminKonsum",
+                        "label": "EMAIL NOTIF KONSUMSI",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }
+            ],
+            "properties": {
+                "customWidth": "",
+                "horizontal": "",
+                "label": "",
+                "width": "100%"
+            }
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section1",
+            "join": "",
+            "label": "EMAIL",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "master_hash",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+            "properties": {
+                "script": "import java.util.Collection;\nimport org.joget.apps.app.dao.EnvironmentVariableDao;\nimport org.joget.apps.app.model.AppDefinition;\nimport org.joget.apps.app.model.EnvironmentVariable;\nimport org.joget.apps.app.service.AppUtil;\nimport org.joget.apps.form.model.Element;\nimport org.joget.apps.form.model.FormData;\nimport org.joget.apps.form.model.FormRow;\nimport org.joget.apps.form.model.FormRowSet;\nimport org.joget.commons.util.LogUtil;\n\npublic FormRowSet load(Element element, String primaryKey, FormData formData) {\n    FormRowSet rows = new FormRowSet();\n    \n    AppDefinition appDef = AppUtil.getCurrentAppDefinition();\n    if (appDef != null) {\n        EnvironmentVariableDao environmentVariableDao = (EnvironmentVariableDao) AppUtil.getApplicationContext().getBean(\"environmentVariableDao\");\n        Collection environmentVariableList = environmentVariableDao.getEnvironmentVariableList(null, appDef, null, null, null, null);\n        \n        if (environmentVariableList != null && environmentVariableList.size() > 0) {\n            FormRow r = new FormRow();\n            \n            for (EnvironmentVariable e : environmentVariableList) {\n                if (e.getValue() != null) {\n                    r.setProperty(e.getId(), e.getValue());\n                }\n            }\n            \n            rows.add(r);\n        }\n    }\n    \n    return rows;\n}\n\n//call load method with injected variable\nreturn load(element, primaryKey, formData);",
+                "useAjax": ""
+            }
+        },
+        "name": "MASTER_EMAIL",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.BeanShellFormBinder",
+            "properties": {
+                "script": "import org.joget.apps.app.dao.EnvironmentVariableDao;\nimport org.joget.apps.app.model.AppDefinition;\nimport org.joget.apps.app.model.EnvironmentVariable;\nimport org.joget.apps.app.service.AppUtil;\nimport org.joget.apps.form.model.Element;\nimport org.joget.apps.form.model.FormData;\nimport org.joget.apps.form.model.FormRow;\nimport org.joget.apps.form.model.FormRowSet;\nimport org.joget.apps.form.model.FormStoreBinder;\nimport org.joget.plugin.base.PluginManager;\n  \npublic FormRowSet store(Element element, FormRowSet rows, FormData formData) {\n    //check the rows is not empty before store it\n    if (rows != null && !rows.isEmpty()) {\n        AppDefinition appDef = AppUtil.getCurrentAppDefinition();\n        EnvironmentVariableDao environmentVariableDao = (EnvironmentVariableDao) AppUtil.getApplicationContext().getBean(\"environmentVariableDao\");\n        \n        //Get the submitted data\n        FormRow row = rows.get(0);\n        \n        for (Object key : row.keySet()) {\n            String envId = (String) key;\n            String value = row.getProperty(envId);\n            \n            if (!envId.isEmpty()){\n                EnvironmentVariable e = environmentVariableDao.loadById(envId, appDef);\n                if (e != null) {\n                    e.setValue(value);\n                    environmentVariableDao.update(e);\n                } else {\n                    EnvironmentVariable e = new EnvironmentVariable();\n                    e.setAppDefinition(appDef);\n                    e.setId(envId);\n                    e.setValue(value);\n                    environmentVariableDao.add(e);\n                }\n            }\n        }\n    }\n    \n    return rows;\n}\n\n//call store method with injected variable\nreturn store(element, rows, formData);",
+                "useAjax": ""
+            }
+        },
+        "tableName": "master_email"
+    }
+}

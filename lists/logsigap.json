@@ -1,0 +1,149 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JogetEntityDatalistBinder",
+        "properties": {
+            "entity": "FormDataAuditTrail",
+            "extraCondition": "",
+            "filters": []
+        }
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_5",
+            "label": "datetime",
+            "name": "datetime",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_2",
+            "label": "username",
+            "name": "username",
+            "sortable": "false"
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_6",
+            "label": "appId",
+            "name": "appId",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_0",
+            "label": "tableName",
+            "name": "tableName",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_3",
+            "label": "action",
+            "name": "action",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_4",
+            "label": "data",
+            "name": "data",
+            "sortable": "false"
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "disableResponsive": "",
+    "filters": [
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-4016662-fn_datetime",
+            "hidden": "",
+            "id": "filter_1",
+            "label": "datetime",
+            "name": "datetime",
+            "type": {
+                "className": "org.joget.plugin.enterprise.DateRangeDataListFilterType",
+                "properties": {
+                    "dateStoreInUTC": "",
+                    "format": "mm/dd/yy",
+                    "formatJava": "MM/dd/yyyy",
+                    "fromDefaultValue": "",
+                    "fromLabel": "From",
+                    "showFieldLabel": "true",
+                    "toDefaultValue": "",
+                    "toLabel": "To",
+                    "yearRange": "c-10:c+10"
+                }
+            }
+        },
+        {
+            "id": "filter_2",
+            "label": "username",
+            "name": "username",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            }
+        },
+        {
+            "datalist_type": "filter",
+            "filterParamName": "d-4016662-fn_appId",
+            "hidden": "",
+            "id": "filter_0",
+            "label": "appId",
+            "name": "appId",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {"defaultValue": "sigapv01"}
+            }
+        }
+    ],
+    "hidePageSize": "",
+    "id": "logsigap",
+    "name": "LOG SIGAP",
+    "order": "1",
+    "orderBy": "datetime",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "responsiveView": [
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Mobile"
+        },
+        {
+            "breakpoint": "",
+            "columns": "",
+            "view": "Tablet"
+        }
+    ],
+    "rowActions": [],
+    "searchPopup": "",
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}
