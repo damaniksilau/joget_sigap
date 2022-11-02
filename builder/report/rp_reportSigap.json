@@ -1,0 +1,101 @@
+{
+    "body": {"elements": [{
+        "className": "org.joget.rbuilder.lib.LabelValueTableReportElement",
+        "properties": {
+            "binder": {
+                "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                "properties": {
+                    "aggregateField": [{
+                        "field": "dateCreated",
+                        "function": "AFD_COUNT_"
+                    }],
+                    "customSelectionValue": "",
+                    "extraCondition": "",
+                    "filters": [],
+                    "formDefId": "konsumsi",
+                    "functionColumns": [],
+                    "groupBy": "dateCreated",
+                    "having": [],
+                    "joins": []
+                }
+            },
+            "borderColor": "#000000",
+            "borderSize": "1px",
+            "borderStyle": "solid",
+            "header_align": "left",
+            "header_background": "",
+            "header_bold": "",
+            "header_color": "",
+            "header_decoration": "",
+            "header_italic": "",
+            "header_size": "",
+            "id": "F4AC6FF9-43B8-4496-8AC2-A9F1384BC577",
+            "labelHeader": "",
+            "label_align": "left",
+            "label_background": "",
+            "label_bold": "",
+            "label_color": "",
+            "label_decoration": "",
+            "label_italic": "",
+            "label_size": "",
+            "label_width": "50%",
+            "mapping_label": "dateCreated",
+            "mapping_value": "AFD_COUNT_dateCreated",
+            "marginBottom": "10px",
+            "padding": "2px",
+            "selectorClass": "",
+            "type": "binder",
+            "valueHeader": "",
+            "value_align": "left",
+            "value_background": "",
+            "value_bold": "",
+            "value_color": "",
+            "value_decoration": "",
+            "value_italic": "",
+            "value_size": "",
+            "value_width": "50%"
+        }
+    }]},
+    "footer": {"elements": []},
+    "header": {"elements": [
+        {
+            "className": "org.joget.rbuilder.lib.TextReportElement",
+            "properties": {
+                "align": "center",
+                "bold": "true",
+                "color": "#092E90",
+                "decoration": "",
+                "height": "",
+                "id": "1B9D76F9-D548-4E48-C94E-5CE28C9ACD60",
+                "italic": "",
+                "marginBottom": "40px",
+                "selectorClass": "",
+                "size": "50",
+                "text": "REPORT dari APLIKASI SIGAP"
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.HorizontalLineReportElement",
+            "properties": {
+                "color": "#000000",
+                "id": "7CD66DB3-6596-4591-478B-0BD291C7F91F",
+                "size": "2px",
+                "style": "solid"
+            }
+        }
+    ]},
+    "properties": {
+        "bottomMargin": "10",
+        "description": "",
+        "id": "rp_reportSigap",
+        "leftMargin": "10",
+        "margins": "normal",
+        "name": "REPORT SIGAP",
+        "orientation": "portrait",
+        "pageHeight": "297",
+        "pageWidth": "210",
+        "paperSize": "a4",
+        "rightMargin": "10",
+        "topMargin": "10"
+    }
+}

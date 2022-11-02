@@ -1,0 +1,112 @@
+{
+    "categories": [{
+        "className": "org.joget.apps.userview.model.UserviewCategory",
+        "menus": [{
+            "className": "org.joget.plugin.enterprise.SqlChartMenu",
+            "properties": {
+                "binder": {
+                    "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                    "properties": {
+                        "aggregateField": [{
+                            "field": "status",
+                            "function": "AFD_COUNT_"
+                        }],
+                        "customSelectionValue": "",
+                        "extraCondition": "",
+                        "filters": [],
+                        "formDefId": "konsumsi",
+                        "functionColumns": [],
+                        "groupBy": "status",
+                        "having": [],
+                        "joins": []
+                    }
+                },
+                "categoryAxisLabel": "Category",
+                "chartHeight": "80%",
+                "chartType": "candlestick",
+                "chartWidth": "100%",
+                "colors": "",
+                "customFooter": "",
+                "customHeader": "",
+                "customId": "",
+                "datasource": "binder",
+                "dateFormat": "",
+                "enableOffline": "",
+                "id": "426A7BE19E7543F193D523A2250E5029",
+                "keyName": "",
+                "label": "DAFTAR PENGAJUAN KONSUMSI",
+                "mapping_close": "AFD_COUNT_status",
+                "mapping_date": "status",
+                "mapping_high": "status",
+                "mapping_low": "AFD_COUNT_status",
+                "mapping_open": "AFD_COUNT_status",
+                "showValueLabel": "",
+                "sortingOrder": "ASC",
+                "sortingOrderByColumn": "",
+                "title": "Chart Title",
+                "userviewCacheDuration": "20",
+                "userviewCacheScope": "",
+                "valueAxisLabel": "Value",
+                "yaxisPrefix": ""
+            }
+        }],
+        "properties": {
+            "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+            "label": "<i class='fa fa-home'><\/i> Home"
+        }
+    }],
+    "className": "org.joget.apps.userview.model.Userview",
+    "properties": {
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "diagram",
+        "logoutText": "Logout",
+        "name": "Diagram",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#"
+    },
+    "setting": {"properties": {
+        "__": "",
+        "hideThisUserviewInAppCenter": "true",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "theme": {
+            "className": "org.joget.plugin.enterprise.ProgressiveTheme",
+            "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "ORANGE",
+                "buttonTextColor": "WHITE",
+                "css": "",
+                "disableHelpGuide": "",
+                "disablePush": "",
+                "disablePwa": "",
+                "enableResponsiveSwitch": "",
+                "fav_icon": "",
+                "fontColor": "WHITE",
+                "homeAttractBanner": "",
+                "homeUrl": "",
+                "horizontal_menu": "",
+                "inbox": "",
+                "js": "",
+                "loginPageBottom": "",
+                "loginPageTop": "",
+                "logo": "",
+                "menuFontColor": "BLACK",
+                "primaryColor": "INDIGO",
+                "profile": "",
+                "removeAssignmentTitle": "",
+                "shortcut": [],
+                "shortcutLinkLabel": "",
+                "subfooter": "",
+                "subheader": "",
+                "themeScheme": "light",
+                "urlsToCache": "",
+                "userImage": "",
+                "userMenu": []
+            }
+        },
+        "userviewDescription": "",
+        "userview_thumbnail": ""
+    }}
+}

@@ -1,0 +1,40 @@
+{
+    "elements": [
+        {
+            "className": "org.joget.api.lib.AppListAPI",
+            "properties": {
+                "id": "9E2A9D7A-53D5-4E23-AA92-11434FA75904",
+                "label": "OK",
+                "listDefId": "daftarStaff"
+            }
+        },
+        {
+            "className": "org.joget.api.lib.AppFormAPI",
+            "properties": {
+                "ENABLED_PATHS": "post:/;delete:/{recordId};put:/;get:/{recordId};get:/{recordId}/{fieldId}/files",
+                "formDefId": "skala",
+                "id": "61335AD4-1851-4B54-F484-C153B3933080",
+                "ignorePermission": "true",
+                "label": ""
+            }
+        }
+    ],
+    "properties": {
+        "contactEmail": "",
+        "contactName": "",
+        "description": "",
+        "enableInternal": "true",
+        "externalDocDesc": "",
+        "externalDocUrl": "",
+        "id": "API-1abf82fa-66bf-4561-9c8e-c94785570282",
+        "internalKey": "wdwqerqeqeqweasdasdaseasesae",
+        "internalPermission": {
+            "className": "org.joget.api.lib.ApiPermission",
+            "properties": {"apiId": "API-1abf82fa-66bf-4561-9c8e-c94785570282"}
+        },
+        "licenseName": "",
+        "licenseUrl": "",
+        "name": "kancab",
+        "termsOfService": ""
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "categories": [{
+        "className": "org.joget.apps.userview.model.UserviewCategory",
+        "menus": [
+            {
+                "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                "properties": {
+                    "binder": {
+                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                        "properties": {
+                            "aggregateField": [{
+                                "field": "jktrans",
+                                "function": "AFD_COUNT_"
+                            }],
+                            "customSelectionValue": "",
+                            "extraCondition": "",
+                            "filters": [],
+                            "formDefId": "trans",
+                            "functionColumns": [],
+                            "groupBy": "jktrans",
+                            "having": [],
+                            "joins": []
+                        }
+                    },
+                    "categoryAxisLabel": "JENIS KENDARAAN",
+                    "chartHeight": "80%",
+                    "chartType": "bar",
+                    "chartWidth": "100%",
+                    "colors": "",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "diagtransbus",
+                    "datasource": "binder",
+                    "enableOffline": "",
+                    "horizontal": "",
+                    "id": "B95091031CE24EE4BB4051944F4087B4",
+                    "keyName": "",
+                    "label": "DIAGRAM JENIS KENDARAAN",
+                    "mapping_x": "jktrans",
+                    "mapping_ys": [{
+                        "legend": "Count",
+                        "y": "AFD_COUNT_jktrans"
+                    }],
+                    "showLegend": "true",
+                    "showValueLabel": "true",
+                    "sortingOrder": "DESC",
+                    "sortingOrderByColumn": "jktrans",
+                    "stack": "",
+                    "title": "DIAGRAM BY JENIS KENDARAAN",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "valueAxisLabel": "JUMLAH",
+                    "xAxisDisplayAS": "",
+                    "yaxisPrefix": ""
+                }
+            },
+            {
+                "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                "properties": {
+                    "binder": {
+                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                        "properties": {
+                            "aggregateField": [{
+                                "field": "dritrans",
+                                "function": "AFD_COUNT_"
+                            }],
+                            "customSelectionValue": "",
+                            "extraCondition": "",
+                            "filters": [],
+                            "formDefId": "trans",
+                            "functionColumns": [],
+                            "groupBy": "dritrans",
+                            "having": [],
+                            "joins": []
+                        }
+                    },
+                    "categoryAxisLabel": "DRIVER",
+                    "chartHeight": "80%",
+                    "chartType": "bar",
+                    "chartWidth": "100%",
+                    "colors": "",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "diagtransdriv",
+                    "datasource": "binder",
+                    "enableOffline": "",
+                    "horizontal": "",
+                    "id": "56528F2705754F9EA3590E5D969B47F8",
+                    "keyName": "",
+                    "label": "DIAGRAM DRIVER",
+                    "mapping_x": "dritrans",
+                    "mapping_ys": [{
+                        "legend": "Count",
+                        "y": "AFD_COUNT_dritrans"
+                    }],
+                    "showLegend": "true",
+                    "showValueLabel": "true",
+                    "sortingOrder": "ASC",
+                    "sortingOrderByColumn": "",
+                    "stack": "",
+                    "title": "DIAGRAM BY DRIVER",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "valueAxisLabel": "JUMLAH",
+                    "xAxisDisplayAS": "",
+                    "yaxisPrefix": ""
+                }
+            }
+        ],
+        "properties": {
+            "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+            "label": "<i class='fa fa-home'><\/i> Home"
+        }
+    }],
+    "className": "org.joget.apps.userview.model.Userview",
+    "properties": {
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "diagramTransport",
+        "logoutText": "Logout",
+        "name": "DIAGRAM TRANSPORT",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#"
+    },
+    "setting": {"properties": {
+        "__": "",
+        "hideThisUserviewInAppCenter": "true",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "theme": {
+            "className": "org.joget.plugin.enterprise.ProgressiveTheme",
+            "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "ORANGE",
+                "buttonTextColor": "WHITE",
+                "css": "",
+                "disableHelpGuide": "",
+                "disablePush": "",
+                "disablePwa": "",
+                "enableResponsiveSwitch": "",
+                "fav_icon": "",
+                "fontColor": "WHITE",
+                "homeAttractBanner": "",
+                "homeUrl": "",
+                "horizontal_menu": "",
+                "inbox": "",
+                "js": "",
+                "loginPageBottom": "",
+                "loginPageTop": "",
+                "logo": "",
+                "menuFontColor": "BLACK",
+                "primaryColor": "INDIGO",
+                "profile": "",
+                "removeAssignmentTitle": "",
+                "shortcut": [],
+                "shortcutLinkLabel": "",
+                "subfooter": "",
+                "subheader": "",
+                "themeScheme": "light",
+                "urlsToCache": "",
+                "userImage": "",
+                "userMenu": []
+            }
+        },
+        "userviewDescription": "",
+        "userview_thumbnail": ""
+    }}
+}
