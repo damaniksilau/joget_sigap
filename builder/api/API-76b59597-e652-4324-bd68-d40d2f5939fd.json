@@ -1,0 +1,17 @@
+{
+    "elements": [{
+        "className": "org.joget.api.lib.AppFormAPI",
+        "properties": {
+            "ENABLED_PATHS": "post:/;delete:/{recordId};put:/;get:/{recordId}",
+            "formDefId": "jk",
+            "id": "E53B3D4F-1F5A-4AE7-7872-6520B116D465",
+            "ignorePermission": "true",
+            "label": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "API-76b59597-e652-4324-bd68-d40d2f5939fd",
+        "name": "permntaan"
+    }
+}
